@@ -5,7 +5,7 @@ document.getElementById("btnValidar").addEventListener("click", async () => {
         return alert("Debe ingresar una cédula");
     }
 
-    const API = "https://TU-SERVICIO.onrender.com";
+    const API = "https://practica12-w7tp.onrender.com";
 
     let res = await fetch(`${API}/validar/${cedula}`);
     let data = await res.json();
@@ -16,3 +16,4 @@ document.getElementById("btnValidar").addEventListener("click", async () => {
 
     document.getElementById("resultado").textContent = texto;
 });
+
